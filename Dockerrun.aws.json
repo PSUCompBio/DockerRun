@@ -1,12 +1,15 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "rhk12/nsfcareer.ami:dec17"
+    "Name": "rhk12/test:latest",
+    "Update": "true"
   },
   "Ports": [
     {
-      "ContainerPort": "8000"
+      "ContainerPort": "4000"
     }
   ],
-  "Volumes": []
-}
+  "Logging": "/var/log/nginx",
+  "Volumes": [],
+  "Command": "bash /home/ec2-user/bash_scripts/start-nodejs.sh"
+ }
