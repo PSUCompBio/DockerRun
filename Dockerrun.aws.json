@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "rhk12/test:latest",
+    "Name": "rhk12/nsfcareer.ami:latest",
     "Update": "true"
   },
   "Ports": [
